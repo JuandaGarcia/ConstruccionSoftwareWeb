@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to bottom right, #e65c00, #F9D423);
+    background-size: 100vw 100vh;
+}
+
+.contenedor {
+    margin: 25px 0px;
+    display: flex;
+    width: 50vw;
+    height: 65vh;
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.seccion-imagen{
+    background-color: rgb(242, 243, 255);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    width: 75%;
+}
+
+.seccion-formulario{
+    height: 100%;
+    width: 50%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #e65c00;
+    padding: 5%;
+}
+
+.boton{
+    background: linear-gradient(to bottom right, #e65c00, #F9D423);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    display: initial;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.imput-text{
+    border: none;
+    border-bottom: 1px solid black;   
+}
