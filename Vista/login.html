@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="fonts/ProductSansBold.ttf">
     <link rel="stylesheet" href="css/LoginRegister.css">
     <title>Iniciar sesión</title>
 </head>
 <body>
-    <div class="contenedor">
-        <section class="seccion-imagen">
-            <img class="imagen" src="img/login.png" alt="LoginRegister">
-        </section>
-        <form class="seccion-formulario">
-            <h1>"Nombre Empresa"</h1>
-            <input class="imput-text" type="text" placeholder="Usuario">
+    <section class="seccion-imagen">
+        <i class="icon-cancel boton-salir"></i>
+        <div class="texto">
+            <h1>Hola</h1>
+            <p><strong>Bienvenido al sistema</strong></p>
+        </div>
+    </section>
+    <div class="seccion-formulario">
+        <form class="formulario">
+            
+            <h1>Iniciar sesión</h1>
 
-            <input class="imput-text" type="password" placeholder="Contraseña">
+            <figure class="linea"></figure>
 
-            <input class="boton" type="submit"  value="Iniciar Sesión">
+            <label for="Email">Email</label><br>
+            <input class="imput-text" type="email" id="Email" placeholder="Ingresa tu Email"><br>
+
+            <label for="password">Contraseña</label><br>
+            <input class="imput-text" type="password" id="password" placeholder="Ingresa tu contraseña">
+    
+            <p>no tienes cuenta? <a href=""><strong>Registrate aquí</strong></a></p>
+    
+            <input class="boton-iniciar" type="submit"  value="Iniciar Sesión">
         </form>
     </div>
 </body>
