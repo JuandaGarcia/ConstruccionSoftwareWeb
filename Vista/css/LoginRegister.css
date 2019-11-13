@@ -5,7 +5,7 @@ body {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
 
@@ -19,6 +19,7 @@ body {
     justify-content: center;
     padding: 50px;
     color: white;
+    position: relative;
 }
 
 .seccion-imagen h1{
@@ -27,7 +28,7 @@ body {
 }
 
 .texto {
-    position: fixed;
+    position: absolute;
     top: 35vh;
 }
 
@@ -58,6 +59,10 @@ a {
     margin-bottom: 0px;
 }
 
+.seccion-formulario-register h1{
+    margin-top: 0px;
+}
+
 .linea{
     border-top: 2px solid black;
     width: 85px;
@@ -86,6 +91,11 @@ a {
     position: relative;
 }
 
+.formulario-register{
+    position: relative;
+    top: -30px;
+}
+
 .boton-iniciar{
     background: transparent;
     border: 2px solid #9300c0;
@@ -98,7 +108,7 @@ a {
     margin-top: 5%;
     outline: none;
     font-weight: bold;
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     right: 0;
 }
@@ -109,14 +119,19 @@ a {
   }
 
 .imput-text{
+    background: transparent;
     border: none;
     width: 300px;
     height: 50px;
     border-bottom: 1px solid gray;   
     margin-bottom: 40px;
     outline: none;
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
+}
+
+.imput-text-register {
+    margin-bottom: 20px;
 }
 
 .imput-text:focus { 
