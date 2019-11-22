@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.nav-bar{
+    width: 92vw;
+    height: 15vh;
+    padding: 0px 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: none;
+    
+}
+
+.contenedor{
+    display: flex;
+    padding: 0 4vw;
+    height: 85vh;
+}
+
+.Primera{
+    /* max-height: 95vh; */
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Primera h1{
+    font-size: 100px;
+    color: #ffd766;
+}
+.Primera p {
+    font-size: 20px;
+    width: 75%;
+}
+
+.Segunda{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Segunda figure{
+    position: fixed;
+    bottom: 0;
+    padding: 0px;
+    display: flex;
+}
+
+.registrarse {
+    height: 30px;
+    width: 125px;
+    border: 2px solid #9300c0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #9300c0;
+    text-decoration: none;
+}
+
+.iniciar-sesion{
+    height: 30px;
+    width: 125px;
+    border: 2px solid #9300c0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #9300c0;
+    text-decoration: none;
+}
+
+.comenzar{
+    height: 45px;
+    width: 150px;
+    border: 2px solid #9300c0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #9300c0;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+ol{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-content: center;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.logo {
+    width: 150px;
+}
