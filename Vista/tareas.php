@@ -18,6 +18,7 @@
     <title>To-Do List</title>
 </head>
 <body>
+<?php include '../controlador/controladorTarea.php'; ?>
     <section class="perfil">
         <div class="menu">
             <figure>
@@ -37,12 +38,16 @@
             <script src="js/main.js"></script>
         </div>
         <div class="div-nueva-tarea">
-            <form action="" class="formulario">
-                    <label for="Nueva-tarea">Nueva tarea</label><br>
-                    <input class="input-text" type="text" id="Nueva-tarea" placeholder="Nueva tarea">
-                    <input class="enviar-tarea" type="submit"  value="+">        
+            <form action="" class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <div class="contenedor-mensaje-nueva">
+                        <label for="Nueva-tarea">Nueva tarea</label>
+                        <span class="mensaje-error"><?php echo $tarea_alerta; ?></span>
+                    </div>
+                    <input class="input-text" type="text" id="Nueva-tarea" placeholder="Nueva tarea" name="tarea">
+                    <input class="enviar-tarea" type="submit"  value="+"><br>       
             </form>
         </div>
+        <span class="mensaje-correcto"><?php echo $tarea_alerta2; ?></span><br>
     </section>
 </body>
 </html>

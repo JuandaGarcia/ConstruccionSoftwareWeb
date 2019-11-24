@@ -31,6 +31,21 @@ body{
     transform: scaleY(1.2);
 }
 
+.mensaje-error{
+    color: #ff4848;
+    font-size: 15px;
+}
+.mensaje-correcto{
+    color: #48ff70;
+    font-size: 25px;
+}
+
+.contenedor-mensaje-nueva{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .menu{
     position: relative;
     display: block;
@@ -108,7 +123,7 @@ body{
 .div-nueva-tarea{
     display: flex;
     align-items: center;
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
 
