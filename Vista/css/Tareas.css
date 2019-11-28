@@ -123,8 +123,91 @@ body{
 .div-nueva-tarea{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 80%;
     width: 100%;
+}
+
+.tareaslista {
+    background-color: rgba(149, 0, 194, 0.7);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 75%;
+    height: 80%;
+    display: block;
+    overflow: auto;
+    font-weight: bold;
+}
+
+.tareaslista table {
+    width: 100%;
+}
+
+.eliminar{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    height: 25px;
+    width: 25px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0;
+    transition: 0.1s;
+    text-align: center;
+}
+
+.eliminar:hover{
+    cursor: pointer;
+    background: rgb(255, 124, 151);
+    border: 2px solid transparent;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.mas{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0;
+    transition: 0.1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25% 30%;
+}
+
+.mas:hover{
+    cursor: pointer;
+    background: rgb(124, 255, 163);
+    border: 2px solid transparent;
+}
+
+.tareaslista td {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.tareaslista::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 15px;
+}
+
+.tareaslista::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.5)/* inear-gradient( #9300c0 0%,#e100ff 100% ) */;
+	border-radius: 5px;
 }
 
 .formulario{

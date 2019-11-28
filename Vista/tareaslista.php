@@ -18,7 +18,7 @@
     <title>To-Do List</title>
 </head>
 <body>
-<?php include '../controlador/controladorTarea.php'; ?>
+<?php include '../controlador/controladorMostrar.php'; ?>
     <section class="perfil">
         <div class="menu">
             <figure>
@@ -38,16 +38,28 @@
             <script src="js/main.js"></script>
         </div>
         <div class="div-nueva-tarea">
-            <form action="" class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <div class="contenedor-mensaje-nueva">
-                        <label for="Nueva-tarea">Nueva tarea</label>
-                        <span class="mensaje-error"><?php echo $tarea_alerta; ?></span>
-                    </div>
-                    <input class="input-text" type="text" id="Nueva-tarea" placeholder="Nueva tarea" name="tarea">
-                    <input class="enviar-tarea" type="submit"  value="+"><br>       
-            </form>
+            <div class="tareaslista">
+                <table>
+                    <?php    
+                    $vacio = 0;
+                    while($row = mysqli_fetch_array($tareas_usuario)){ 
+                        $vacio ++;    
+                    ?>
+                        <tr>
+                            <td>
+                                • <?php echo $row['texto']?> 
+                                <a class="eliminar" href="tareaslista.php?eliminar=<?php echo $row['id'];?>">x</a>
+                            </td>
+                        </tr>
+                    <?php } if ($vacio===0) { ?>
+                        <a class="mas" href="tareas.php">
+                            <?php echo "+ Añadir una tarea"; ?>
+                        </a>
+                            <?php }
+                    ?>
+                </table>
+            </div>
         </div>
-        <span class="mensaje-correcto"><?php echo $tarea_alerta2; ?></span><br>
     </section>
 </body>
 </html>

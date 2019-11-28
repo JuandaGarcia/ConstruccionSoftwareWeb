@@ -7,6 +7,7 @@ $usuario = $_SESSION["id"];
 $texto = "";
 $estado = true;
 $tarea_alerta = $tarea_alerta2 = "";
+$puede_enviar = false;
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -15,11 +16,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $tarea_alerta = "Por favor, ingrese una tarea en el campo";
     }else{
         $texto = trim($_POST["tarea"]);
+        $puede_enviar = true;
     }
 }
 
 
-if(empty($tarea_alerta)){
+if(empty($tarea_alerta) && $puede_enviar == true){
 
     $sql = "INSERT INTO tareas (texto, estado, usuario) VALUES (?, ?, ?)";
             
@@ -38,6 +40,7 @@ if(empty($tarea_alerta)){
             echo "Algo Salio mal, intentalo despues";
         }
     }
+    $puede_enviar = false;
 }
 
 mysqli_close($link);
