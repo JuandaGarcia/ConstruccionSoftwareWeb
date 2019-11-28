@@ -38,7 +38,7 @@
             <script src="js/main.js"></script>
         </div>
         <div class="div-nueva-tarea">
-            <form action="" class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <form class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <div class="contenedor-mensaje-nueva">
                         <label for="Nueva-tarea">Nueva tarea</label>
                         <span class="mensaje-error"><?php echo $tarea_alerta; ?></span>
